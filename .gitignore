@@ -1,0 +1,121 @@
+# JetBrains IDEs
+.idea/
+
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+client/build/
+client/*.pbxuser
+client/!default.pbxuser
+client/*.mode1v3
+client/!default.mode1v3
+client/*.mode2v3
+client/!default.mode2v3
+client/*.perspectivev3
+client/!default.perspectivev3
+client/xcuserdata
+client/*.xccheckout
+client/*.moved-aside
+client/DerivedData
+client/*.hmap
+client/*.ipa
+client/*.xcuserstate
+client/Pods/
+
+# Android/IntelliJ
+client/.idea
+client/.gradle
+client/local.properties
+client/*.iml
+
+# Visual Studio Code
+#
+.vscode/
+
+
+# node.js
+#
+client/node_modules/
+client/npm-debug.log
+client/yarn-error.log
+client/dist/
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+# Bundle artifact
+*.jsbundle
+
+# CocoaPods
+client/ios/Pods/
+client/ios/Podfile.lock
+client/android/build/
+
+# OSX
+#
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Server
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Env
+server/.env
+
+# Dependencies
+server/node_modules/
+
+# Coverage
+server/coverage
+
+# Transpiled files
+server/build/
+
+# VS Code
+server/.vscode
+server/!.vscode/tasks.js
+
+# JetBrains IDEs
+server/.idea/
+
+# Optional npm cache directory
+server/.npm
+
+# Optional eslint cache
+server/.eslintcache

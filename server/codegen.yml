@@ -1,0 +1,21 @@
+overwrite: true
+schema: "./src/graphql/schema.graphql"
+documents: null
+generates:
+  ./src/graphql/generated.ts:
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
+  ./schema.graphql.json:
+    plugins:
+      - "introspection"
+    config:
+      avoidOptionals:
+          field: true
+          inputValue: true
+          object: true
+          defaultValue: true
+      useIndexSignature: true
+      mappers:
+          User: ./src/models/user#IUser
+          Post: ./src/models/post#IPost
