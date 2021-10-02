@@ -11,6 +11,7 @@ import {SubscriptionServer} from 'subscriptions-transport-ws';
 import {execute, subscribe} from 'graphql';
 import {PubSub} from 'graphql-subscriptions';
 import express = require("express");
+import cors = require("cors");
 
 export const pubsub = new PubSub();
 
@@ -19,7 +20,13 @@ export const pubsub = new PubSub();
     loaders: [new GraphQLFileLoader()],
   });
 
+  const corsOptions = {
+    // origin: 'http://localhost:8080', your_url
+    credentials: true // <-- REQUIRED backend setting
+  };
+
   const app = express();
+  app.use(cors(corsOptions));
   const httpServer = createServer(app);
 
   const schemaWithResolvers = addResolversToSchema({

@@ -12,7 +12,6 @@ export const MenuBar: React.FC = () => {
       <AppBar position="static" >
         <Toolbar >
           <Typography variant="h6" component={RouterLink} sx={{flexGrow: 1}} to='/' >
-
             Home
           </Typography >
           <Button color="inherit" component={RouterLink} to='/login' >Login</Button >

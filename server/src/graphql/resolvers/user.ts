@@ -4,6 +4,7 @@ import 'dotenv/config'
 import {Resolvers, User as UserType} from "../generated";
 import {UserInputError} from "apollo-server-express";
 import {validateLoginInput, validateRegisterInput} from "../../utils/validation";
+
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 

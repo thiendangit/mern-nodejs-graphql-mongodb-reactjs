@@ -5,7 +5,7 @@
     "react",
     "react-hooks",
     "eslint-plugin-import"
-//    "prettier"
+    //    "prettier"
   ],
   "env": {
     "browser": true
@@ -26,7 +26,13 @@
   },
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-unused-vars": ["warn", {"ignoreRestSiblings": true}],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "react/jsx-filename-extension": [
       "warn",
       {
@@ -39,7 +45,14 @@
     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "no-shadow": ["error", {"builtinGlobals": false, "hoist": "functions", "allow": []}]
+    "no-shadow": [
+      "error",
+      {
+        "builtinGlobals": false,
+        "hoist": "functions",
+        "allow": []
+      }
+    ]
   },
   "settings": {
     "react": {
